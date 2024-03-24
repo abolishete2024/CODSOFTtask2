@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML HomePage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #230422;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #f1f0f0;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #230422;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #f9f4f4;
+      padding: 35px 20px;
+    }
+
+    /* CSS for main element */
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 520px;
+      background-color: rgb(120, 205, 228);
+      background-image:url('https://st3.depositphotos.com/1625616/15217/i/600/depositphotos_152174674-stock-photo-red-white-and-blue-blur.jpg');
+       background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 60px;
+      color: #080000;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .intro p {
+      font-size: 20px;
+      color: #110202;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .intro button {
+      background-color: #fafcfc;
+      color: #110202;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(188, 118, 177, 0.4)
+    }
+
+    .achievements {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .achievements .work i {
+      width: fit-content;
+      font-size: 50px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .achievements .work .work-heading {
+      font-size: 20px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .achievements .work .work-text {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+      border-top: 2px solid #080000;
+    }
+
+    .about-me img {
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .about-me-text h2 {
+      font-size: 30px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .about-me-text p {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    /* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #230422;
+      padding: 40px 80px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #d9d1d1;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="aboli project html.html" class="logo">E-voting Website</a>
+    <nav class="nav-items">
+      <a href="index.html">Home</a>
+      <a href="About.html" target="_blank">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>E-Voting </h1>
+      <p>Vote is your right and your duty</p>
+      <button><a href="learnmore.html">Learn more</a></button>
+    </div>
+    <div class="achievements">
+      <div class="work">
+        <i class="fas fa-registered"></i>
+        <p class="work-heading"><a href="Registration.html">Register</a></p>
+        <p class="work-text">you have to registered here.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-user"></i>
+        <p class="work-heading"><a href="login.html">Login</a></p>  
+        <p class="work-text">you have to login here.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-sign-out-alt"></i>
+        <p class="work-heading"><a href="logout.html">logout</a></p>
+        <p class="work-text">you have to logout from here.</p>
+      </div>
+    </div>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>Importance of Your Vote:</h2>
+        <p>I am a voter,Voting is the most powerful right of every citizen and it is our duty to exercise our vote.</p>
+      </div>
+      <img src="img1.jpg" alt="me">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; 2023 voter</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="contactus.html">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="https://www.linkedin.com/in/shete-aboli-virendra-7b2177259/"><i class="fab fa-linkedin"></i></a>
+        <a href = "https://instagram.com/nilange_suchita?igshid=MzNlNGNkZWQ4Mg==" class = "flex">
+          <i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer> 
+</body>
+</html>

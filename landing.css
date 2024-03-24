@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #3c3c3c;
+    color: rgb(244, 240, 240);
+    text-align: center;
+    padding: 8px;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 8px 0;
+}
+.container {
+    position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  .container img {vertical-align: middle;}
+  
+  .container .content {
+    position:absolute;
+    bottom:0%;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #d8d5d5;
+    width: 100%;
+    padding: 25px;
+  }
+.featured-music {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3opx;
+}
+
+.music-card {
+    border: 1px solid #444040;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    padding: 30px;
+}
+
+.music-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1opx;
+    position:var()
+    bottom: 0;
+    width: 100%;
+  }
+
+  .social-links {
+    margin-top: 8px;
+  }
+
+  .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.2em;
+    font-size: 1em;
+  }
+
+
