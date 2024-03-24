@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ePharmacy - Your Online Pharmacy</title>
+    <link rel="stylesheet" href="677.css">
+</head>
+<body>
+    <!-- ... Your existing HTML code ... -->
+
+    <section class="featured-products">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="f1.jpeg" alt="Product 1">
+            <h3>Immunity Boosters</h3>
+            <p>Healthy ways to strengthen your immune system ·.</p>
+            <span class="price">Rs.455</span>
+            <button onclick="addToCart('Immunity Boosters', 455)">Add to Cart </button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="f2.jpeg" alt="Product 2">
+            <h3>Protein Powder</h3>
+            <p>Protein powders are nutritional powder that help build muscle.</p>
+            <span class="price">Rs.1499</span>
+            <button onclick="addToCart('Protein Powder', 1499)">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="f3.jpeg" alt="Product 3">
+            <h3>Pain-Relief Spray</h3>
+            <p>It provides quick relief from muscular and joint pain. .</p>
+            <span class="price">Rs.199</span>
+            <button onclick="addToCart('Pain-Relief Spray', 199)">Add to Cart</button>
+        </div>
+         <!-- Product 4 -->
+         <div class="product">
+            <img src="m3.jpeg" alt="Vitamin Pills">
+            <h3>Saridon</h3>
+            <p>Saridon is medicine for headache.</p>
+            <span class="price">Rs.99</span>
+            <button onclick="addToCart('Saridon', 99)">Add to Cart</button>
+        </div>
+         <!-- Product 5 -->
+         <div class="product">
+            <img src="m4.jpeg" alt="Vitamin Pills">
+            <h3>Cetirizine</h3>
+            <p>Cetirizine is medicine for cold.</p>
+            <span class="price">Rs.79</span>
+            <button onclick="addToCart('Cetrizine', 79)">Add to Cart</button>
+        </div>
+         <!-- Product 6 -->
+         <div class="product">
+            <img src="m5.jpeg" alt="Vitamin Pills">
+            <h2>Benadryl</h2>
+            <p>Benadryl is a cough syrup.</p>
+            <span class="price">Rs.199</span>
+            <button onclick="addToCart('Benadryl', 199)">Add to Cart</button>
+        </div>
+         <!-- Product 7 -->
+         <div class="product">
+            <img src="m6.jpeg" alt="Vitamin Pills">
+            <h2>Healline</h2>
+            <p>Healline is cream for cut heals</p>
+            <span class="price">Rs.160</span>
+            <button onclick="addToCart('Healline', 160)">Add to Cart</button>
+        </div>
+         <!-- Product 8 -->
+         <div class="product">
+            <img src="m7.jpeg" alt="Vitamin Pills">
+            <h2>Glowista</h2>
+            <p>Glowista is acne treatment face cream.</p>
+            <span class="price"><Rs class="200"></Rs></span>
+            <button onclick="addToCart('Pain-Relief Spray', 200)">Add to Cart</button>
+        </div>
+
+        <!-- Add more products similarly -->
+    </section>
+
+    <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-list"></ul>
+        <p>Total Amount: Rs.<span id="total-amount">0</span></p>
+    </div>
+
+    <script>
+        // Cart array to store added items
+        let cart = [];
+
+        // Function to add item to cart
+        function addToCart(productName, price) {
+            const item = { name: productName, price: price };
+            cart.push(item);
+
+            // Update cart details
+            updateCart();
+        }
+
+        // Function to update cart details on the UI
+        function updateCart() {
+            const cartList = document.getElementById("cart-list");
+            const totalAmountElement = document.getElementById("total-amount");
+
+            // Clear existing cart details
+            cartList.innerHTML = "";
+
+            // Update cart details
+            let totalAmount = 0;
+            cart.forEach(item => {
+                const listItem = document.createElement("li");
+                listItem.textContent = `${item.name} - Rs.${item.price}`;
+                cartList.appendChild(listItem);
+
+                totalAmount += item.price;
+            });
+
+            // Update total amount
+            totalAmountElement.textContent = totalAmount;
+        }
+    </script>
+
+</body>
+</html>
